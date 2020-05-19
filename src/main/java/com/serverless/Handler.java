@@ -17,7 +17,7 @@ public class Handler implements RequestHandler<Map<String, Object>, ApiGatewayRe
 		LOG.info("received: " + input);
 
 		Response responseBody = new Response("Go Serverless v1.x! Your function executed successfully!", input);
-		
+
 		return ApiGatewayResponse.builder()
 				.setStatusCode(200)
 				.setObjectBody(responseBody)

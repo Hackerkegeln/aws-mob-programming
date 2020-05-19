@@ -126,4 +126,14 @@ public class ApiGatewayResponse {
 			return new ApiGatewayResponse(statusCode, body, headers, base64Encoded);
 		}
 	}
+
+	@Override
+	public String toString() {
+		return "ApiGatewayResponse{" +
+				"statusCode=" + statusCode +
+				", body='" + body + '\'' +
+				", headers=" + headers +
+				", isBase64Encoded=" + isBase64Encoded +
+				'}';
+	}
 }
